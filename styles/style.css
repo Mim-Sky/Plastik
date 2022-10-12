@@ -44,6 +44,11 @@ a.active,a:hover {
     background: #cdcdcd;
     transition: 0.7s; 
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
     
 h1 {
     text-align: center;
@@ -72,19 +77,16 @@ article p {
     opacity: 0.75;
 }
 
+.image {
+    display: flex;
+    flex-direction: column;
+}
 
-
-.main-image { 
-    background-image: url("../images/trash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center fixed;
-    height: 650px; 
-    padding: 10px;
-   }
 
 .caption {
-    display: block;
+    position: relative;
+    top: -300px;
+    min-width: 380px;
     color: black;
     background-color:#48A49C;
     font-family: 'Playfair Display', serif;
@@ -93,8 +95,6 @@ article p {
     line-height: 40px;
     margin-left: 20px;
     padding: 10px;
-    position: absolute;
-    top: 70%;
     width: 55%;
     opacity: 0.8;
     }
